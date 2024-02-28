@@ -101,3 +101,21 @@ function toggle(number) {
       break;
   }
 }
+
+var dark_toggle = document.getElementById('dark_mode_toggle')
+
+dark_toggle.onclick = function(){
+    document.body.classList.toggle("dark_theme")
+
+    if (document.body.classList.contains("dark_theme"))
+    {
+        dark_toggle.src = 'images/sun_dark.png';
+        // var audio = new Audio("./audio/PH_intro.mp3");
+        // audio.play();
+    } 
+    else {
+      dark_toggle.src = 'images/moon.png'
+
+    }
+    
+}

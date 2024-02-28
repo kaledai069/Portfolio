@@ -39,6 +39,15 @@
   --z-modal: 1000;
 }
 
+.dark_theme {
+	--title-color: #ffa31a;
+	--title-color-dark: #ffa31a;
+	--text-color: #808080;
+	--body-color: 	#1b1b1b;
+	--container-color: #151515;
+	--border-color: 1px solid #ffffff1a;
+}
+
 @media screen and (max-width: 992px) {
   :root {
     --big-font-size: 2.75rem;
@@ -107,6 +116,16 @@ button {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.light_dark_toggle {
+	width: 70%;
+	cursor: pointer;
+	transition: width 0.1s ease;
+}
+
+.light_dark_toggle:hover{
+	width: 73%
 }
 
 .section {
@@ -1183,4 +1202,8 @@ img {
   .scrollup {
     right: 1rem;
   }
+}
+
+.hide_image {
+	display: none;
 }
